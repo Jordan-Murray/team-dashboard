@@ -1,32 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import HoursDone from './Components/HoursDone';
-import KanyeQuote from "./Components/KanyeQuote";
+import HeaderBar from './Components/HeaderBar';
+import Sidebar from './Components/Sidebar';
+// import KanyeQuote from "./Components/KanyeQuote";
 
 function App() {
   return (
-    <div>
-      <KanyeQuote></KanyeQuote>
+    <div className='dashboard'>
+      {/* <KanyeQuote></KanyeQuote> */}
+      <HeaderBar></HeaderBar>
+      <Sidebar></Sidebar>
       <HoursDone></HoursDone>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //     <KanyeQuote></KanyeQuote>
-    //     <HoursDone></HoursDone>
-    //   </header>
-    // </div>
   );
 }
 

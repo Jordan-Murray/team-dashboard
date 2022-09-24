@@ -2,13 +2,73 @@
   text-align: center;
 }
 
-.TilesContainer{
+.dashboard{
+  height: 100vh;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.sidebar{
+  height: 100vh;
+  width: 85px;
+  background-color: #2c2c2c;
+  float: left;
+}
+
+.white { filter: saturate(3); }
+
+.button-containers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-containers > input{
+  width: 50px;
+  filter: brightness(100);
+  padding: 10px;
+}
+
+.header{
+  width: 100%;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-image{
+  width: 75px;
+  height: 75px;
+}
+
+.header-text{
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.tiles-container{
   display: flex;
   flex-direction: row;
   padding: 50px;
+  color: white;
 }
 
-.HoursDoneTile{
+.tile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2c2c2c;
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 5px 5px #1f1f1f;
+  border-radius: 25px;
+}
+
+.hours-done-tile{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +76,18 @@
   padding: 50px;
 }
 
-.Username{
+.progress-circle{
+  padding: 20px;
+}
+
+.username{
   font-family: sans-serif;
   font-size: 40px;
+}
 
+.worked-time{
+  font-family: sans-serif;
+  font-size: 25;
 }
 
 .App-logo {
