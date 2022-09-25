@@ -5,14 +5,35 @@
 .dashboard{
   height: 100vh;
   overflow: hidden;
-  background-color: #121212;
+  background-color: #f5f6fb;
+}
+
+.header{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0 200px;
 }
 
 .sidebar{
+  position: absolute;
+  top: 0px;
   height: 100vh;
-  width: 85px;
-  background-color: #2c2c2c;
+  width: 125px;
   float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile-with-blur{
+  background-color: #FFFFFF;
+  box-shadow: 1px 0px 20px #95a1b1;
+  color: #3C4565;
+}
+
+.rounded-edges{
+  border-radius: 25px;
 }
 
 .white { filter: saturate(3); }
@@ -23,37 +44,41 @@
   align-items: center;
 }
 
-.button-containers > input{
-  width: 50px;
-  filter: brightness(100);
-  padding: 10px;
+.icon{
+  padding:20px;
+}
+.clicked{
+  color: #1890F9;
 }
 
-.header{
-  width: 100%;
-  background-color: #2c2c2c;
-  display: flex;
-  align-items: center;
+.team-button-container{
+  margin-left: 10px;
+}
+
+.team-button-container > button{
   padding: 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .logo-image{
   width: 75px;
   height: 75px;
-}
-
-.header-text{
-  color: white;
   padding: 20px;
-  font-family: sans-serif;
-  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .tiles-container{
   display: flex;
   flex-direction: row;
-  padding: 50px;
-  color: white;
+  padding: 25px 50px 25px 50px;
+  margin-left: 125px;
 }
 
 .tile{
@@ -61,11 +86,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #2c2c2c;
   margin: 30px;
   padding: 10px;
-  box-shadow: 5px 5px #1f1f1f;
-  border-radius: 25px;
+  width: 400px;
 }
 
 .hours-done-tile{

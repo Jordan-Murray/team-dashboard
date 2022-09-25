@@ -1,13 +1,16 @@
 import React from 'react'
 import '../App.css';
-import logo from '../Images/SHLogo.png'
 
 
 export default function HeaderBar(){
     return (
-        <div className='header'>
-            <img className="logo-image" src={logo}></img>
-            <span className='header-text'>SH Team Dashboard</span>
+        <div className='header tile-with-blur rounded-edges'>
+            <div className='team-button-container'>
+                <button className='clicked'>Baggins</button>
+                <button>Kenobi</button>
+                <button>Moonraker</button>
+                <button>Q</button>
+            </div>
         </div>
     )
 }

@@ -61,7 +61,7 @@ export default function HoursDone()
     const theme = createTheme({
         palette: {
           primary: {
-            main: '#27e8a7'
+            main: '#22D792'
           }
         },
       });
@@ -69,13 +69,13 @@ export default function HoursDone()
 
 
     return (
-        <div className="tiles-container">
+        <div className="tiles-container ">
             { 
                 users.map((user) => 
                 {
                     const progress = (user.workItemTime / 7.75) * 100;
                     return (
-                        <div className="tile" key={user.name}>
+                        <div className="tile tile-with-blur rounded-edges" key={user.name}>
                             <div className="hours-done-tile">
                                 <ThemeProvider theme={theme}>
                                     <CircularProgressWithLabel className="progress-circle"
