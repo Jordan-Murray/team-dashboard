@@ -5,7 +5,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import '../App.css';
 
 
-export default function HoursDone()
+
+export default function HoursDone(props)
 {   
     const [users, setUsers] = useState([])
 
@@ -69,7 +70,10 @@ export default function HoursDone()
 
 
     return (
+        <>
         <div className="tiles-container ">
+        <h3>{props.counter}</h3>
+        {console.log(props.counter)}
             { 
                 users.map((user) => 
                 {
@@ -103,5 +107,6 @@ export default function HoursDone()
                 })
             }
         </div>
+        </>
     )
 }
