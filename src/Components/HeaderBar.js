@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import '../App.css';
-import { useNavigate } from "react-router-dom";
 
 
 export default function HeaderBar(props){
@@ -83,7 +82,7 @@ export default function HeaderBar(props){
                 <button>Moonraker</button>
                 <button>Q</button>
                 {/* <button onClick={onPress}>click me</button> */}
-                <button onClick={dataChange}>click me 2</button>
+                {/* <button onClick={dataChange}>click me 2</button> */}
 
             </div>
         </div>
